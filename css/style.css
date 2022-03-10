@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* #######################html styling############################# */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* #################################### navbar styling################################ */
+.header {
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/header-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar .logo {
+  float: left;
+}
+
+.navbar .navitem {
+  display: inline-block;
+  list-style: none;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.navbar {
+  padding: 1rem;
+}
+.navbar .nav-items {
+  float: right;
+  margin-top: 1rem;
+}
+
+.navbar a:link,
+.navbar a:visited {
+  color: #f4f4f4;
+}
+
+/* ################################ utility classes################################ */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lg-heading {
+  font-size: 3.5rem;
+}
+
+.md-heading {
+  font-size: 2.2rem;
+}
+
+.text-red {
+  color: #e6394e;
+}
+
+.text-light {
+  color: #f4f4f4;
+}
+
+.text-black {
+  color: #333;
+}
+
+.text-gray {
+  color: #555555;
+}
+
+.bg-dark {
+  background: #263238;
+}
+nav::after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+
+.navbar a {
+  padding-bottom: 0.3rem;
+}
+
+.navbar a:hover {
+  border-bottom: 1px solid#f4f4f4;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+p,
+li {
+  font-size: 1.6rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.header-content h1 {
+  text-transform: uppercase;
+  font-size: 700;
+}
+
+p {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 0.5em;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background: white;
+  color: #e6394e;
+  border-radius: 10em;
+}
+
+.btn-primary:hover {
+  background-color: #f4f4f4;
+}
+
+.btn-secondary:hover {
+  background-color: #f4f4f4;
+}
+
+.btn-secondary {
+  border: 2px solid #e6394e;
+  color: #e6394e;
+  border-radius: 8em;
+}
+
+/* ################showcase section styling############### */
+.showcase {
+  background: #ddd;
+  padding: 10em 0;
+}
+
+.row {
+  height: 350px;
+  background: white;
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row1 {
+  margin-bottom: 10em;
+}
+
+.row1 .img,
+.row2 .text-box {
+  float: left;
+  width: 50%;
+}
+
+.row1 .text-box,
+.row2 .img {
+  float: right;
+  width: 50%;
+}
+.row .img {
+  height: 100%;
+}
+
+.row .text-box {
+  padding: 3em;
+}
+
+.row .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* #################################features section styling################################ */
+.features {
+  padding: 10em 0;
+}
+.boxwrapper {
+  box-shadow: 0px 0px 20px 0px#aaa;
+}
+.box {
+  width: 33.3333%;
+  float: left;
+  padding: 2em;
+  text-align: center;
+}
+
+.box-1,
+.box-3 {
+  background-color: #263238;
+  color: #f4f4f4;
+}
+
+.box-2 {
+  background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+  color: #f4f4f4;
+}
+
+.boxwrapper::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.footer {
+  background: #263238;
+  padding: 2rem 0;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.social-media-links i {
+  margin: 2rem;
+}
+/* ################################ About section styling############################### */
+.about {
+  padding: 5rem 0;
+}
+.about h1 {
+  border-bottom: 4px solid #e6394e;
+}
+ul li {
+  list-style: none;
+}
+/* ######################about wrapper styling######################## */
+
+.about-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+.about-wrapper .left {
+  float: left;
+  width: 50%;
+}
+
+.about-wrapper .right {
+  float: right;
+  width: 50%;
+}
+
+.about-wrapper::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.about-wrapper li::before {
+  content: "\2713";
+  color: #e6394e;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+/* ######################counts styling####################### */
+.counts {
+  margin-top: 3rem;
+}
+.counts .count-item {
+  float: left;
+  width: 25%;
+  padding: 2em 0;
+  text-align: center;
+}
+.count-item span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e6394e;
+}
+.count-item p {
+  font-weight: 700;
+  color: #555555;
+  font-size: 1.8rem;
+}
+/* ############################### contact form styling ###################### */
+.contact-form {
+  padding: 5rem 0;
+  background: #f7f7f7;
+}
+.form-wrapper .company-address {
+  background: #fff;
+  float: left;
+  width: 49%;
+  padding: 1rem;
+  height: 700px;
+}
+.form-wrapper .company-address i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.form-wrapper .company-address h2 {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.form-wrapper .company-address img {
+  max-width: 90%;
+  min-height: 40rem;
+  object-fit: cover;
+}
+.form-wrapper .address-group {
+  margin-bottom: 3rem;
+}
+/* ########################## form styling########################### */
+.form-wrapper .form {
+  font-size: 1.6rem;
+  background: #fff;
+  float: right;
+  width: 49%;
+  padding: 1rem;
+  height: 700px;
+}
+
+.form-wrapper label {
+  display: block;
+}
+.form-wrapper input {
+  padding: 0.5rem;
+  width: 100%;
+}
+.form-wrapper .form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form textarea {
+  width: 100%;
+  height: 300px;
+  padding: 1rem;
+}
+
+.form-btn {
+  display: block;
+  font-size: 1.8rem;
+  padding: 0.5em 3em;
+  margin: 0 auto;
+  background: #e6394e;
+  color: #f4f4f4;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+}
+
+.form-wrapper .form label::after {
+  content: "* ";
+  color: #e6394e;
+}
+.form h1::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  border: 3px solid #e6394e;
+}
+
+.form-wrapper::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* ########################### media quiries #################### */
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar .nav-items,
+  .navbar .logo {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  /* .header-content .main-heading {
+    display: none;
+  } */
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .row .img,
+  .row .text-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .features .box {
+    float: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px#aaa;
+  }
+  .features .box-2,
+  .features .box-3 {
+    margin-top: 7rem;
+  }
+  .boxwrapper {
+    box-shadow: none;
+  }
+  .form-wrapper .company-address {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .form-wrapper .form {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar .nav-items,
+  .navbar .logo {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .row .img,
+  .row .text-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+
+  .features .box {
+    float: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px#aaa;
+  }
+  .features .box-2,
+  .features .box-3 {
+    margin-top: 7rem;
+  }
+  .boxwrapper {
+    box-shadow: none;
+  }
+  .form-wrapper .company-address {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .form-wrapper .form {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+  .row .text-box h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
